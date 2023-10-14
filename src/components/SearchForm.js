@@ -36,25 +36,27 @@ export default function SearchForm({ onSearch }) {
       <View style={styles.datePicker}>
         <Feather name="calendar" size={26} color="gray" />
         <View>
-          <DateTimePicker
+          {/* <DateTimePicker
             value={departDate}
             onChange={(event, date) => setDepartDate(date || new Date())}
             minimumDate={new Date()}
-          />
+          /> */}
+          <Text>Helo</Text>
         </View>
         <Text style={{ fontSize: 20, color: "gainsboro", marginLeft: 10 }}>
           |
         </Text>
         <View>
-          <DateTimePicker
+          {/* <DateTimePicker
             value={returnDate}
             onChange={(event, date) => setReturnDate(date || new Date())}
             minimumDate={departDate}
-          />
+          /> */}
+          <Text>Hi</Text>
         </View>
       </View>
 
-      {/* <Button title="Search" onPress={onSearchPress} /> */}
+      <Button title="Search" onPress={onSearchPress} />
     </View>
   );
 }
